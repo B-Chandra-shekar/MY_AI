@@ -1,0 +1,69 @@
+:root {
+    // /**************************
+    // **** Application colors****
+    // ***************************/
+    --primary-color: #ab3fca;
+    --dark-primary-color: #9928b9;
+    --light-primary-color: #ab3fca;
+    --very-light-primary-color: #ab3fca;
+    --secondary-color: #6a7df4;
+    --dark-secondary-color: #6a7df4;
+    --light-secondary-color: #6a7df4;
+    --very-light-secondary-color: #6a7df4;
+    --accent-color: #6a7df4;
+    --warn-color: #0076d6;
+
+    /**************************
+    **** Font styles ****
+    ***************************/
+    --default-font-family: 'Open sans', sans-serif;
+    --default-font-size: 14px;
+    --heading-font-size: 18px;
+    --sub-heading-font-size: 16px;
+    --info-font-size: 12px;
+
+    /**************************
+    **** Border styles ****
+    ***************************/
+    --border-color: #ffeffd;
+    --primary-border-radius: 20px;
+    --border-radius: 16px;
+
+    /**************************
+    **** Button styles ****
+    ***************************/
+    --primary-button-color: #ab3fca;
+    --button-shadow: #00000029 0px 1px 4px;
+    --button-shadow-hover: #00000026 0px 2px 8px;
+    --secondary-button-color: #fff;
+
+    /**************************
+    ******** COLOURS **********
+    ***************************/
+    --background-color: #fdfdff;
+    --blue-text-color: #3f3fc5;
+    --grey-font-color: #64748b;
+    --icon-color: #94a3b8;
+
+    --default-shadow: #0000000d 0px 0px 0px 1px;
+    --inner-box-shadow: #0000000f 0px 2px 4px 0px inset;
+
+    /** Side nav styles **/
+    --sideNavList-background-hover: #8386a936;
+
+    /** Form field styles **/
+    --textField-border-radius: 22px;
+    --textField-border-color: #cbd5e1;
+    --textField-border-color-hover: #53535361;
+    --textField-focus-border-color: #757575;
+    --textField-label-color: #64748b;
+
+}
+
+$primary-color: var(--primary-color);
+
+$secondary-color: var(--secondary-color);
+
+$icon-color: #94a3b8;
+$grey-font-color: #64748b;
+$blue-text-color: #3f3fc5;

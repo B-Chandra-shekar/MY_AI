@@ -1,0 +1,19 @@
+<div class="chat-container">
+    <div class="messages">
+        @for (msg of messages; track $index) {
+            <div [ngClass]="msg.sender">
+                <span>{{ msg.text }}</span>
+            </div>
+        }
+        @if (loading) {
+            <div class="ai">
+                <span>Typing...</span>
+            </div>
+        }
+    </div>
+
+    <form (submit)="send(); $event.preventDefault()" class="input-area">
+        <input [(ngModel)]="userInput" name="chatInput" placeholder="Type your message..." />
+        <button type="submit">Send</button>
+    </form>
+</div>

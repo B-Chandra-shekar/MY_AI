@@ -1,0 +1,177 @@
+@use './user-variables.scss';
+
+/*******************************
+ ****** Common styles **********
+*******************************/
+
+ul {
+    margin-bottom: 0 !important;
+    padding-left: 1.2rem;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.light-primary-background {
+    background: var(--very-light-primary-color);
+}
+
+.white-background {
+    background: var(--bs-white);
+}
+
+.top-box-shadow {
+    box-shadow: #0000001a 0px 4px 12px 6px, #0000000f 0px 2px 4px 3px;
+}
+
+.icon-color {
+    color: var(--icon-color) !important;
+}
+
+.link {
+
+    cursor: pointer;
+    // color: darken($blue-text-color, 5%) !important;
+    text-decoration: none;
+
+    i {
+        position: relative;
+        left: 0;
+        transition: ease 0.3s all;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--blue-text-color) !important;
+
+        i {
+            left: 10px;
+            color: var(--blue-text-color) !important;
+        }
+    }
+}
+
+.heading-font-size {
+    font-size: var(--heading-font-size);
+}
+
+.sub-heading-font-size {
+    font-size: var(--sub-heading-font-size);
+}
+
+.gray-text{
+    color: var(--grey-font-color);
+}
+
+/********************************
+******* SCROLLBAR STYLES ********
+********************************/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    overflow-y: scroll;
+    background: #f0f0ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cfcfe86e;
+    border-radius: 10px;
+}
+
+.cdk-overlay-container {
+    ::-webkit-scrollbar {
+        height: 5px;
+        overflow-y: scroll;
+        background: #f0f0ff;
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #babad66e;
+        border-radius: 10px;
+    }
+}
+
+/*******************************
+***** BUTTON styles **********
+*******************************/
+
+button {
+    border: none;
+    outline: none;
+}
+
+.button {
+    text-decoration: none;
+    transition: all 0.3s;
+    overflow: hidden;
+    box-shadow: var(--button-shadow);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 6px 18px;
+    display: flex;
+    align-items: center;
+    gap: 0 0.7rem;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: var(--button-shadow-hover);
+    }
+}
+
+.button:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.button-primary {
+    background: var(--primary-button-color);
+    color: var(--bs-white);
+
+    .button-icon {
+        i {
+            position: relative;
+            transition: all ease 0.4s;
+            right: 0;
+        }
+    }
+
+    &:hover {
+        background: var(--dark-primary-color);
+
+        .button-icon {
+            i {
+                right: -5px;
+            }
+        }
+    }
+}
+
+.button-secondary {
+    background: var(--secondary-button-color);
+    color: var(--primary-button-color);
+
+    .button-icon {
+        i {
+            position: relative;
+            transition: all ease 0.4s;
+            left: 0;
+        }
+    }
+
+    &:hover {
+        border-color: var(--light-primary-color);
+
+        .button-icon {
+            i {
+                left: -5px;
+            }
+        }
+    }
+}

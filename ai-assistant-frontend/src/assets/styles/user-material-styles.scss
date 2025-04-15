@@ -1,0 +1,99 @@
+@use './user-variables.scss';
+
+:root {
+    --mdc-outlined-text-field-container-shape: 22px;
+    --mdc-outlined-text-field-focus-outline-color: #{var(--textField-focus-border-color)};
+    --mdc-icon-button-icon-color : #{var(--icon-color)};
+}
+
+/*******************************
+***** Mat form field styles ****
+*******************************/
+
+mat-form-field {
+    width: 100%;
+    border-radius: 1rem;
+
+    .mat-mdc-text-field-wrapper {
+        height: 43px;
+        background-color: rgb(255 255 255 / 1) !important;
+        border-radius: var(--textField-border-radius);
+    }
+
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+        border-color: var(--textField-border-color);
+    }
+
+    .mdc-floating-label--float-above {
+        color: var(--textField-label-color) !important;
+    }
+
+    .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
+        border-top-left-radius: var(--mdc-shape-small, var(--textField-border-radius));
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: var(--mdc-shape-small, var(--textField-border-radius));
+    }
+
+    .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
+        border-top-left-radius: 0;
+        border-top-right-radius: var(--mdc-shape-small, var(--textField-border-radius));
+        border-bottom-right-radius: var(--mdc-shape-small, var(--textField-border-radius));
+        border-bottom-left-radius: 0;
+    }
+
+    .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+        top: 19px;
+        font-family: var(--default-font-family);
+        font-size: 14px;
+        color: var(--textField-label-color) !important;
+    }
+
+    .mat-mdc-form-field-flex {
+        .mat-mdc-form-field-icon-suffix {
+            padding-right: 6px;
+            bottom: 5px;
+        }
+    }
+
+    .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+        top: 25px;
+    }
+
+    .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+        padding-top: 2px;
+        padding-bottom: 15px;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .mdc-text-field--focused {
+
+        .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__leading,
+        .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__notch,
+        .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline__trailing {
+            border-color: var(--textField-border-color);
+        }
+    }
+
+    .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+        color: var(--primary-color);
+    }
+
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__leading,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__notch,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focused):hover .mdc-notched-outline .mdc-notched-outline__trailing {
+        border-color: var(--textField-border-color-hover);
+    }
+
+    .mat-mdc-form-field-error-wrapper {
+        padding: 0 10px;
+    }
+
+}
+
+.mdc-button {
+    font-family: var(--default-font-family);
+}

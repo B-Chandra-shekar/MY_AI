@@ -1,0 +1,23 @@
+
+@use 'bootstrap/scss/bootstrap';
+
+@use './assets/styles/utility-styles.scss';
+@use './assets/styles/user-animation.scss';
+@use './assets/styles/user-variables.scss';
+@use './assets/styles/user-material-theme.scss';
+@use './assets/styles/user-material-styles.scss';
+@use './assets/styles/user-styles.scss';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open sans', sans-serif !important;
+    font-size: var(--default-font-size) !important;
+    background-color: #f2f9ff;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
